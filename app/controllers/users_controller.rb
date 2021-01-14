@@ -32,6 +32,7 @@ class UsersController < ApplicationController
 
     def show
         user = User.find(params[:id])
+        #byebug
         render json: UserSerializer.new(user)
     end
 
@@ -50,6 +51,6 @@ class UsersController < ApplicationController
 
     private
     def user_params
-        params.permit(:name, :password)
+        params.permit(:username, :password)
     end
 end

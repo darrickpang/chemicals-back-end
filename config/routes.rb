@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
+  resources :users
   resources :chemical_users
   resources :chemicals
-  resources :users
 
   post '/user_login', to: 'users#login'
   get '/user_persist', to: 'users#persist'

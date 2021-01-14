@@ -5,4 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-User.create(name: 'Darrick Pang', password: '123')
+User.destroy_all
+Chemical.destroy_all 
+
+User.create(username: 'Darrick Pang', password: '123')
+User.create(username: 'Nelson Pang', password: '123')
+
+Chemical.create(Levels: '1 PPM')
+Chemical.create(Levels: '2 PPM')
+Chemical.create(Levels: '3 PPM')
