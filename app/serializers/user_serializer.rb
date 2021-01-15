@@ -1,4 +1,4 @@
 class UserSerializer 
   include FastJsonapi::ObjectSerializer
-  attributes :id, :username
+  attributes :id, :name
 end
