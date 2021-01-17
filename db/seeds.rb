@@ -10,6 +10,3 @@ Chemical.destroy_all
 
 User.create(name: 'Darrick Pang', password: '123')
 
-Chemical.create(level: '1 PPM')
-Chemical.create(level: '2 PPM')
-Chemical.create(evel: '3 PPM')
