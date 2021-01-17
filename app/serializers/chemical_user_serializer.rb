@@ -1,3 +1,3 @@
 class ChemicalUserSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :user_id, :level, :date, :time
 end
