@@ -15,7 +15,7 @@ class ChemicalUsersController < ApplicationController
 
     def show
         chemical_user = ChemicalUser.find(params[:id])
-        render json: chemical_user
+        render json: ChemicalUserSerializer.new(chemical_user)
     end
 
     def edit
