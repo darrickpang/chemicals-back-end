@@ -11,3 +11,4 @@ ChemicalUser.destroy_all
 User.create(name: 'Darrick Pang', password: '123')
 
 ChemicalUser.create(user_id: 1, level: 4, date: "2021/01/17", time: "3:25 PM")
+ChemicalUser.create(user_id: 1, level: 5, date: "2021/01/19", time: "4:19 PM")
