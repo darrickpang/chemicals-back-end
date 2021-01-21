@@ -1,4 +1,3 @@
-class ChemicalUserSerializer 
-  include FastJsonapi::ObjectSerializer
-  attributes :level, :date, :time
+class ChemicalUserSerializer < ActiveModel::Serializer
+  attributes :id, :level, :date, :time, :user_id
 end
