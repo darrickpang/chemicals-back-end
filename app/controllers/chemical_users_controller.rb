@@ -37,6 +37,6 @@ class ChemicalUsersController < ApplicationController
 
     private
     def chemical_user_params
-        params.require(:chemical_user).permit(:level, :date, :time)
+        params.require(:chemical_user).permit(:level, :date, :time, :user_id)
     end
 end
