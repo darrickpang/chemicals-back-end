@@ -9,7 +9,7 @@ class ChemicalUsersController < ApplicationController
     end
 
     def create 
-        chemical_user = ChemicalUser.create(student_date_params)
+        chemical_user = ChemicalUser.create(chemical_user_params)
         render json: chemical_user
     end
 
@@ -24,7 +24,7 @@ class ChemicalUsersController < ApplicationController
 
     def update 
         chemical_user = ChemicalUser.find(params[:id])
-        chemical_user.update(student_date_params)
+        chemical_user.update(chemical_user_params)
         render json: chemical_user
     end
 
@@ -36,7 +36,7 @@ class ChemicalUsersController < ApplicationController
     end 
 
     private
-    def student_date_params
+    def chemical_user_params
         params.require(:chemical_user).permit(:level, :date, :time)
     end
 end
